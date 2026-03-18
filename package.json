@@ -1,0 +1,26 @@
+{
+  "name": "fletcher-content-pipeline",
+  "version": "1.0.0",
+  "description": "Host-side services for fetching content and social metrics, posting to Mission Control",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev:bot": "tsx src/bot/index.ts",
+    "dev:poller": "tsx src/poller/index.ts",
+    "start:bot": "node dist/bot/index.js",
+    "start:poller": "node dist/poller/index.js"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "dotenv": "^16.4.7",
+    "grammy": "^1.30.0",
+    "jsdom": "^25.0.1",
+    "linkedom": "^0.18.6"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
